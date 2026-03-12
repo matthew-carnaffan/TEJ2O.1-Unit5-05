@@ -13,8 +13,8 @@ basic.showIcon(IconNames.Happy)
 //Find distance using distance sensor
 input.onButtonPressed(Button.A, function() {
     basic.clearScreen()
-    distanceSensor = sonar.ping
-    (DigitalPin.P1,
+    distanceSensor = sonar.ping(
+    DigitalPin.P1,
     DigitalPin.P2,
     PingUnit.Centimeters)
     basic.showNumber(distanceSensor)
